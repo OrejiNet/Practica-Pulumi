@@ -1,0 +1,175 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "dev",
+        "latest": {
+            "manifest": {
+                "time": "2020-04-29T16:07:59.7608781-04:00",
+                "magic": "1cf887de9e8df1530de6a3a80e5fb8cef3c26c5248611921bd860c85313a688f",
+                "version": "v2.0.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:fzW/8bBuspU=:v1:YSM4cd6r4YjlhjCf:NbsO5Tcg5SLWGwXAm49jsRjFcqxiuQ=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:dev::PulumiAzure::pulumi:pulumi:Stack::PulumiAzure-dev",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "outputs": {
+                        "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=pulumistorage8424e3bc;AccountKey=0NLiPGoqT6Uq88/D88LpSSQMTWlw+s6GzTwJEwGkCGTwHtnEKR+pEW73ZH6YzVrQ6VgFn1UnaVM/V0YZUVAC3A==;EndpointSuffix=core.windows.net"
+                    }
+                },
+                {
+                    "urn": "urn:pulumi:dev::PulumiAzure::pulumi:providers:azure::default_3_3_0",
+                    "custom": true,
+                    "id": "31beeaef-119e-4878-8f15-5433c3ec50df",
+                    "type": "pulumi:providers:azure",
+                    "inputs": {
+                        "ClientId": "944fc8b6-ff20-47d6-a362-122e5e48d1e6",
+                        "clientSecret": "574eb97f-74cb-407a-ab40-f335c5fb2bf9",
+                        "location": "WestUS",
+                        "subscriptionId": "53da548f-9ec8-4532-a98c-0f1bed209582",
+                        "tenantId": "5d2b955b-09bd-4fbd-91f7-c2a014f96d29",
+                        "version": "3.3.0"
+                    },
+                    "outputs": {
+                        "ClientId": "944fc8b6-ff20-47d6-a362-122e5e48d1e6",
+                        "clientSecret": "574eb97f-74cb-407a-ab40-f335c5fb2bf9",
+                        "location": "WestUS",
+                        "subscriptionId": "53da548f-9ec8-4532-a98c-0f1bed209582",
+                        "tenantId": "5d2b955b-09bd-4fbd-91f7-c2a014f96d29",
+                        "version": "3.3.0"
+                    }
+                },
+                {
+                    "urn": "urn:pulumi:dev::PulumiAzure::azure:core/resourceGroup:ResourceGroup::PulumiRGroup",
+                    "custom": true,
+                    "id": "/subscriptions/53da548f-9ec8-4532-a98c-0f1bed209582/resourceGroups/pulumirgroup752245d3",
+                    "type": "azure:core/resourceGroup:ResourceGroup",
+                    "inputs": {
+                        "__defaults": [
+                            "location",
+                            "name"
+                        ],
+                        "location": "WestUS",
+                        "name": "pulumirgroup752245d3"
+                    },
+                    "outputs": {
+                        "id": "/subscriptions/53da548f-9ec8-4532-a98c-0f1bed209582/resourceGroups/pulumirgroup752245d3",
+                        "location": "westus",
+                        "name": "pulumirgroup752245d3",
+                        "tags": {}
+                    },
+                    "parent": "urn:pulumi:dev::PulumiAzure::pulumi:pulumi:Stack::PulumiAzure-dev",
+                    "provider": "urn:pulumi:dev::PulumiAzure::pulumi:providers:azure::default_3_3_0::31beeaef-119e-4878-8f15-5433c3ec50df"
+                },
+                {
+                    "urn": "urn:pulumi:dev::PulumiAzure::azure:storage/account:Account::Pulumistorage",
+                    "custom": true,
+                    "id": "/subscriptions/53da548f-9ec8-4532-a98c-0f1bed209582/resourceGroups/pulumirgroup752245d3/providers/Microsoft.Storage/storageAccounts/pulumistorage8424e3bc",
+                    "type": "azure:storage/account:Account",
+                    "inputs": {
+                        "__defaults": [
+                            "accountKind",
+                            "enableHttpsTrafficOnly",
+                            "isHnsEnabled",
+                            "location",
+                            "name"
+                        ],
+                        "accountKind": "StorageV2",
+                        "accountReplicationType": "LRS",
+                        "accountTier": "Standard",
+                        "enableHttpsTrafficOnly": true,
+                        "isHnsEnabled": false,
+                        "location": "westus",
+                        "name": "pulumistorage8424e3bc",
+                        "resourceGroupName": "pulumirgroup752245d3"
+                    },
+                    "outputs": {
+                        "__meta": "{\"schema_version\":\"2\"}",
+                        "accessTier": "Hot",
+                        "accountKind": "StorageV2",
+                        "accountReplicationType": "LRS",
+                        "accountTier": "Standard",
+                        "blobProperties": null,
+                        "enableHttpsTrafficOnly": true,
+                        "id": "/subscriptions/53da548f-9ec8-4532-a98c-0f1bed209582/resourceGroups/pulumirgroup752245d3/providers/Microsoft.Storage/storageAccounts/pulumistorage8424e3bc",
+                        "identity": null,
+                        "isHnsEnabled": false,
+                        "location": "westus",
+                        "name": "pulumistorage8424e3bc",
+                        "networkRules": {
+                            "bypasses": [
+                                "AzureServices"
+                            ],
+                            "defaultAction": "Allow",
+                            "ipRules": [],
+                            "virtualNetworkSubnetIds": []
+                        },
+                        "primaryAccessKey": "0NLiPGoqT6Uq88/D88LpSSQMTWlw+s6GzTwJEwGkCGTwHtnEKR+pEW73ZH6YzVrQ6VgFn1UnaVM/V0YZUVAC3A==",
+                        "primaryBlobConnectionString": "DefaultEndpointsProtocol=https;BlobEndpoint=https://pulumistorage8424e3bc.blob.core.windows.net/;AccountName=pulumistorage8424e3bc;AccountKey=0NLiPGoqT6Uq88/D88LpSSQMTWlw+s6GzTwJEwGkCGTwHtnEKR+pEW73ZH6YzVrQ6VgFn1UnaVM/V0YZUVAC3A==",
+                        "primaryBlobEndpoint": "https://pulumistorage8424e3bc.blob.core.windows.net/",
+                        "primaryBlobHost": "pulumistorage8424e3bc.blob.core.windows.net",
+                        "primaryConnectionString": "DefaultEndpointsProtocol=https;AccountName=pulumistorage8424e3bc;AccountKey=0NLiPGoqT6Uq88/D88LpSSQMTWlw+s6GzTwJEwGkCGTwHtnEKR+pEW73ZH6YzVrQ6VgFn1UnaVM/V0YZUVAC3A==;EndpointSuffix=core.windows.net",
+                        "primaryDfsEndpoint": "https://pulumistorage8424e3bc.dfs.core.windows.net/",
+                        "primaryDfsHost": "pulumistorage8424e3bc.dfs.core.windows.net",
+                        "primaryFileEndpoint": "https://pulumistorage8424e3bc.file.core.windows.net/",
+                        "primaryFileHost": "pulumistorage8424e3bc.file.core.windows.net",
+                        "primaryLocation": "westus",
+                        "primaryQueueEndpoint": "https://pulumistorage8424e3bc.queue.core.windows.net/",
+                        "primaryQueueHost": "pulumistorage8424e3bc.queue.core.windows.net",
+                        "primaryTableEndpoint": "https://pulumistorage8424e3bc.table.core.windows.net/",
+                        "primaryTableHost": "pulumistorage8424e3bc.table.core.windows.net",
+                        "primaryWebEndpoint": "https://pulumistorage8424e3bc.z22.web.core.windows.net/",
+                        "primaryWebHost": "pulumistorage8424e3bc.z22.web.core.windows.net",
+                        "queueProperties": {
+                            "corsRules": [],
+                            "hourMetrics": {
+                                "enabled": true,
+                                "includeApis": true,
+                                "retentionPolicyDays": 7,
+                                "version": "1.0"
+                            },
+                            "logging": {
+                                "delete": false,
+                                "read": false,
+                                "retentionPolicyDays": 0,
+                                "version": "1.0",
+                                "write": false
+                            },
+                            "minuteMetrics": {
+                                "enabled": false,
+                                "includeApis": false,
+                                "retentionPolicyDays": 0,
+                                "version": "1.0"
+                            }
+                        },
+                        "resourceGroupName": "pulumirgroup752245d3",
+                        "secondaryAccessKey": "0DmfpBNcvxLc0Pt7EwWrEO/9pLSjKjlhbt3waX/VdzwCie22cSemyffZMsoRL8WSC0zdyH63GqIFBBjz4kEsqg==",
+                        "secondaryBlobConnectionString": "",
+                        "secondaryConnectionString": "DefaultEndpointsProtocol=https;AccountName=pulumistorage8424e3bc;AccountKey=0DmfpBNcvxLc0Pt7EwWrEO/9pLSjKjlhbt3waX/VdzwCie22cSemyffZMsoRL8WSC0zdyH63GqIFBBjz4kEsqg==;EndpointSuffix=core.windows.net",
+                        "secondaryLocation": "",
+                        "staticWebsite": null,
+                        "tags": {}
+                    },
+                    "parent": "urn:pulumi:dev::PulumiAzure::pulumi:pulumi:Stack::PulumiAzure-dev",
+                    "dependencies": [
+                        "urn:pulumi:dev::PulumiAzure::azure:core/resourceGroup:ResourceGroup::PulumiRGroup"
+                    ],
+                    "provider": "urn:pulumi:dev::PulumiAzure::pulumi:providers:azure::default_3_3_0::31beeaef-119e-4878-8f15-5433c3ec50df",
+                    "propertyDependencies": {
+                        "accountReplicationType": null,
+                        "accountTier": null,
+                        "resourceGroupName": [
+                            "urn:pulumi:dev::PulumiAzure::azure:core/resourceGroup:ResourceGroup::PulumiRGroup"
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

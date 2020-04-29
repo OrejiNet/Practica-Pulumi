@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "dev",
+        "latest": {
+            "manifest": {
+                "time": "2020-04-29T16:26:19.3210605-04:00",
+                "magic": "1cf887de9e8df1530de6a3a80e5fb8cef3c26c5248611921bd860c85313a688f",
+                "version": "v2.0.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:fzW/8bBuspU=:v1:YSM4cd6r4YjlhjCf:NbsO5Tcg5SLWGwXAm49jsRjFcqxiuQ=="
+                }
+            }
+        }
+    }
+}

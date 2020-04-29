@@ -1,0 +1,8 @@
+encryptionsalt: v1:fzW/8bBuspU=:v1:YSM4cd6r4YjlhjCf:NbsO5Tcg5SLWGwXAm49jsRjFcqxiuQ==
+config:
+  azure:ClientId: 944fc8b6-ff20-47d6-a362-122e5e48d1e6
+  azure:clientSecret:
+    secure: v1:zWvSEIqfOlQs8Em5:e3UPoymJxZt7anp1vfnTh6PPai1wZBRtPgA+9h41XjmHRbqw8omSGMNC1Ih1mchLSWb+ZQ==
+  azure:location: WestUS
+  azure:subscriptionId: 53da548f-9ec8-4532-a98c-0f1bed209582
+  azure:tenantId: 5d2b955b-09bd-4fbd-91f7-c2a014f96d29
